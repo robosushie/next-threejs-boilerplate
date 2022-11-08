@@ -1,6 +1,15 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import React from 'react';
 
-export default function Home() {
-  return <div>Hi !!</div>;
+import SEO from 'src/components/seo';
+
+export default function IndexPage() {
+  return (
+    <React.Fragment>
+      <SEO />
+      <div className="text-5xl w-screen h-screen font-bold flex flex-col justify-center items-center">
+        <div>Hi !!</div>
+        <div>Welcome to Next-ThreeJS Template</div>
+      </div>
+    </React.Fragment>
+  );
 }
